@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import urllib
 import json
+import pkg_resources
 
 class paNASA:
 	def __init__(self, token=None, secret=None):
@@ -14,7 +15,8 @@ class paNASA:
 		else:
 			self.headers = None
 
-		resources = json.load(open("resources.json"))
+		data = pkg_resources.resource_string(__name__, "resources.json")
+		resources = json.loads(data.decode())
 
 		for key, value in resources.items():
 			def rec(self, limit=50000, offset=0):
