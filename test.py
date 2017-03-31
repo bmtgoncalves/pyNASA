@@ -1,11 +1,10 @@
-from paNASA import paNASA
+from pyNASA import pyNASA
 
 if __name__ == "__main__":
-
 	from NASA_accounts import apps
-	app = apps["paNASA"]
+	app = apps["pyNASA"]
 
-	nasa = paNASA(**app)
+	nasa = pyNASA(**app)
 	data = nasa.outgassing()
 
 	print(data.shape)
