@@ -1,5 +1,10 @@
 NASA_accounts.py
 
+# Jeckyll
+Gemfile
+Gemfile.lock
+_site/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
