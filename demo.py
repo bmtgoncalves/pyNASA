@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from pyNASA import pyNASA
 
 if __name__ == "__main__":
