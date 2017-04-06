@@ -1,4 +1,4 @@
-# pyNASA - A simple Python interface to Open NASA datasets
+# Simple Python interface to NASA datasets
 
 pyNASA provides a simple interface to obtain seveal NASA datasets and return them as a pandas dataframe ready to use. It currently retrieves the data every time it is requested. A local caching mechanism will be added soon!
 
