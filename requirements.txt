@@ -1,0 +1,4 @@
+pandas==0.18.1
+setuptools==34.2.0
+requests==2.12.1
+sodapy==1.4.3

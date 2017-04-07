@@ -1,5 +1,5 @@
 apps = {
-	"paNASA": {
+	"pyNASA": {
 		"token": "YOUR_TOKEN",
 		"secret": "YOUR_SECRET"
 	}
