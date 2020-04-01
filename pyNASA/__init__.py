@@ -2,6 +2,11 @@ import pandas as pd
 import json
 import pkg_resources
 from sodapy import Socrata
+from joblib import Memory
+from tempfile import mkdtemp
+
+cachedir = mkdtemp()
+memory = Memory(cachedir=cachedir, verbose=0)  # TODO: find temp dir
 
 class pyNASA:
 	def __init__(self, token=None, secret=None):
@@ -25,6 +30,7 @@ class pyNASA:
 
 		setattr(pyNASA, name, rec)
 
+	@memory.cache
 	def resource(self, resource_name, limit=50000, offset=0):
 		records = self.client.get(resource_name, limit=limit, offset=offset)
 
